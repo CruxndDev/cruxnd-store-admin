@@ -5,10 +5,10 @@ import { FaCaretDown } from "react-icons/fa";
 
 const SideBar = () => {
   return (
-    <aside className="h-full w-[15vw] py-5 flex flex-col justify-between">
+    <aside className="h-full w-[15vw] shadow-2xl py-5 flex flex-col justify-between">
       <div>
         <div className="text-center mb-14">
-          <h2 className="font-semibold text-xl">SwapT</h2>
+          <h1 className="font-bold text-xl">SwapT</h1>
         </div>
 
         <div className="flex flex-col sidebarLinks">
@@ -58,7 +58,7 @@ const SideBar = () => {
           />
           <div className="flex flex-col">
             <h3 className="text-sm font-semibold">Tehilla Nwosu</h3>
-            <text className="text-sm">Manager</text>
+            <p className="text-sm">Manager</p>
           </div>
         </div>
         <FaCaretDown className="text-lg" />
