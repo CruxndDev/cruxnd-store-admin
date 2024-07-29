@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sidebarLinks a {
+  @apply w-full text-sm font-medium flex items-center mb-6 pl-6;
+}
+
+.sidebarLinks svg {
+  @apply text-2xl mr-3;
+}
