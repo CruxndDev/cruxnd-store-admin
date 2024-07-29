@@ -5,7 +5,7 @@ import { FaCaretDown } from "react-icons/fa";
 
 const SideBar = () => {
   return (
-    <aside className="h-full w-[15vw] shadow-2xl py-5 flex flex-col justify-between">
+    <aside className="h-full w-[15vw] rounded-xl border-primaryColor border-r-[1.5px] py-5 flex flex-col justify-between">
       <div>
         <div className="text-center mb-14">
           <h1 className="font-bold text-xl">SwapT</h1>
@@ -18,31 +18,31 @@ const SideBar = () => {
           </Link>
           <Link href="/dashboard">
             <BiSolidDashboard />
-            <span>Dashboard</span>
+            <span>Products</span>
           </Link>
           <Link href="/dashboard">
             <BiSolidDashboard />
-            <span>Dashboard</span>
+            <span>Analytics</span>
           </Link>
           <Link href="/dashboard">
             <BiSolidDashboard />
-            <span>Dashboard</span>
+            <span>Report</span>
           </Link>
           <Link href="/dashboard">
             <BiSolidDashboard />
-            <span>Dashboard</span>
+            <span>Orders</span>
           </Link>
           <Link href="/dashboard">
             <BiSolidDashboard />
-            <span>Dashboard</span>
+            <span>Customer</span>
           </Link>
           <Link href="/dashboard">
             <BiSolidDashboard />
-            <span>Dashboard</span>
+            <span>Integrations</span>
           </Link>
           <Link href="/dashboard">
             <BiSolidDashboard />
-            <span>Dashboard</span>
+            <span>Profile</span>
           </Link>
         </div>
       </div>
@@ -61,7 +61,7 @@ const SideBar = () => {
             <p className="text-sm">Manager</p>
           </div>
         </div>
-        <FaCaretDown className="text-lg" />
+        <FaCaretDown className="text-secondaryBlue text-lg" />
       </div>
     </aside>
   );
