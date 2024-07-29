@@ -3,11 +3,11 @@ import SideBar from "@/components/adminPanel/SideBar";
 
 const AdminPanelLayout = ({ children }) => {
   return (
-    <div>
+    <div className="flex h-screen">
       <SideBar />
-      <div>
+      <div className="flex-grow flex flex-col">
         <Header />
-        <div>{children}</div>
+        <div className="bg-red-500 flex-grow">{children}</div>
       </div>
     </div>
   );
