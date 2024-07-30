@@ -37,7 +37,7 @@ const SideBar = ({ menuItems }) => {
               }`}
             >
               {item.icon}
-              <span className="ml-4">{item.name}</span>
+              <span>{item.name}</span>
             </Link>
           ))}
           <span
