@@ -4,11 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaCaretDown } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const SideBar = ({ menuItems }) => {
-  const [active, setActive] = useState("Dashboard");
+  // const [active, setActive] = useState("Dashboard");
   const [indicatorTop, setIndicatorTop] = useState(0);
   const containerRef = useRef(null);
+  const route = usePathname();
 
   useEffect(() => {
     const activeItem = containerRef.current.querySelector(".active");
@@ -17,7 +19,7 @@ const SideBar = ({ menuItems }) => {
       const itemHeight = activeItem.offsetHeight;
       setIndicatorTop(offsetTop + itemHeight / 2 - 8); // 8 is half of the indicator height (h-4)
     }
-  }, [active]);
+  }, [route]);
 
   return (
     <aside className="h-full w-[20vw] xl:w-[15vw] border-primaryColor border-r-[1.5px] py-5 flex flex-col justify-between">
@@ -30,10 +32,9 @@ const SideBar = ({ menuItems }) => {
           {menuItems.map((item) => (
             <Link
               href={item.link}
-              onClick={() => setActive(item.name)}
               key={item.name}
               className={`relative w-full text-sm font-medium flex items-center mb-6 pl-8 transition-colors duration-200 ${
-                active === item.name ? "text-secondaryBlue active" : "hover:text-secondaryBlue"
+                route.startsWith(item.link) ? "text-secondaryBlue active" : "hover:text-secondaryBlue"
               }`}
             >
               {item.icon}
