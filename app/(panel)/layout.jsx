@@ -9,13 +9,13 @@ import { BiSolidDashboard, BiBarChartAlt2 } from "react-icons/bi";
 const AdminPanelLayout = ({ children }) => {
   const menuLinks = [
     { name: "Dashboard", icon: <BiSolidDashboard />, link: "/dashboard" },
-    { name: "Products", icon: <PiPackage />, link: "/dashboard" },
-    { name: "Analytics", icon: <BiBarChartAlt2 />, link: "/dashboard" },
-    { name: "Report", icon: <TbClipboardText />, link: "/dashboard" },
-    { name: "Orders", icon: <PiShoppingCart />, link: "/dashboard" },
-    { name: "Customer", icon: <TbUsersGroup />, link: "/dashboard" },
-    { name: "Integrations", icon: <HiOutlineBadgeCheck />, link: "/dashboard" },
-    { name: "Profile", icon: <CgProfile />, link: "/dashboard" },
+    { name: "Products", icon: <PiPackage />, link: "/products" },
+    { name: "Analytics", icon: <BiBarChartAlt2 />, link: "/analytics" },
+    { name: "Report", icon: <TbClipboardText />, link: "/report" },
+    { name: "Orders", icon: <PiShoppingCart />, link: "/orders" },
+    { name: "Customer", icon: <TbUsersGroup />, link: "/customer" },
+    { name: "Integrations", icon: <HiOutlineBadgeCheck />, link: "/integrations" },
+    { name: "Profile", icon: <CgProfile />, link: "/profile" },
   ];
 
   return (
