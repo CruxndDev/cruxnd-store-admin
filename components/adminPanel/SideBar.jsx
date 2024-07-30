@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { BiSolidDashboard } from "react-icons/bi";
+import { BiSolidDashboard, BiBarChartAlt2 } from "react-icons/bi";
 import { FaCaretDown } from "react-icons/fa";
+import { PiPackage, PiShoppingCart } from "react-icons/pi";
+import { TbClipboardText, TbUsersGroup } from "react-icons/tb";
+import { HiOutlineBadgeCheck } from "react-icons/hi";
+import { CgProfile } from "react-icons/cg";
 
 const SideBar = () => {
   return (
@@ -17,31 +21,31 @@ const SideBar = () => {
             <span>Dashboard</span>
           </Link>
           <Link href="/dashboard">
-            <BiSolidDashboard />
+            <PiPackage />
             <span>Products</span>
           </Link>
           <Link href="/dashboard">
-            <BiSolidDashboard />
+            <BiBarChartAlt2 />
             <span>Analytics</span>
           </Link>
           <Link href="/dashboard">
-            <BiSolidDashboard />
+            <TbClipboardText />
             <span>Report</span>
           </Link>
           <Link href="/dashboard">
-            <BiSolidDashboard />
+            <PiShoppingCart />
             <span>Orders</span>
           </Link>
           <Link href="/dashboard">
-            <BiSolidDashboard />
+            <TbUsersGroup />
             <span>Customer</span>
           </Link>
           <Link href="/dashboard">
-            <BiSolidDashboard />
+            <HiOutlineBadgeCheck />
             <span>Integrations</span>
           </Link>
           <Link href="/dashboard">
-            <BiSolidDashboard />
+            <CgProfile />
             <span>Profile</span>
           </Link>
         </div>
