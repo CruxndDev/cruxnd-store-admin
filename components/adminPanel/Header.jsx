@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import { IoMdSettings } from "react-icons/io";
@@ -8,24 +8,31 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const Header = ({ menuLinks }) => {
-  const [currentPage, setCurrentPage] = useState()
+  const [currentPage, setCurrentPage] = useState();
   const route = usePathname();
 
   useEffect(() => {
-    menuLinks.forEach(item => {
+    menuLinks.forEach((item) => {
       if (route.startsWith(item.link)) {
         setCurrentPage(item.name);
       }
     });
-  })
+  });
 
   return (
-    <header className="h-[10vh] flex items-center justify-between border-primaryColor border-b-[1.5px] px-10">
+    <header
+      className="h-[10vh] flex items-center justify-between px-10"
+      style={{ boxShadow: "0 4px 4px -4px rgb(0, 0, 0)" }}
+    >
       <h1 className="font-bold text-xl">{currentPage}</h1>
 
       <div className="flex items-center">
         <form className="relative w-fit flex items-center mr-14">
-          <input type="text" placeholder="Search" className="placeholder-primaryColor placeholder:font-medium w-[300px] border-[0.1px] border-primaryColor px-4 py-2 rounded-md" />
+          <input
+            type="text"
+            placeholder="Search"
+            className="placeholder-primaryColor placeholder:font-medium w-[300px] border-[0.1px] border-primaryColor px-4 py-2 rounded-md"
+          />
           <CgSearch className="absolute right-3 text-2xl" />
         </form>
 
@@ -37,7 +44,7 @@ const Header = ({ menuLinks }) => {
 
           <div className="flex items-center">
             <p className="font-semibold mr-2">Hello, Tehilla!</p>
-            
+
             <Image
               src={`/avatar.png`}
               alt="Avatar Image"
@@ -49,6 +56,6 @@ const Header = ({ menuLinks }) => {
       </div>
     </header>
   );
-}
- 
+};
+
 export default Header;
