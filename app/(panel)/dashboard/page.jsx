@@ -1,3 +1,7 @@
+import MessagesCard from "@/components/adminPanel/dashboard/quickAccessCards/MessagesCard";
+import OrderSummaryCard from "@/components/adminPanel/dashboard/quickAccessCards/OrderSummaryCard";
+import RevenueByRegionCard from "@/components/adminPanel/dashboard/quickAccessCards/RevenueByRegionCard";
+import TopAdsCard from "@/components/adminPanel/dashboard/quickAccessCards/TopAdsCard";
 import NetIncomeCard from "@/components/adminPanel/dashboard/statCards/NetIncomeCard";
 import ProductViewCard from "@/components/adminPanel/dashboard/statCards/ProductViewCard";
 import TotalCustomersCard from "@/components/adminPanel/dashboard/statCards/TotalCustomers";
@@ -26,7 +30,14 @@ const Dashboard = () => {
       </div>
 
       <div>
-        
+        <OrderSummaryCard />
+
+        <div>
+          <TopAdsCard />
+          <MessagesCard />
+        </div>
+
+        <RevenueByRegionCard />
       </div>
     </>
   );
