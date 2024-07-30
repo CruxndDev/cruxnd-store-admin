@@ -1,13 +1,24 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { BiSolidDashboard, BiBarChartAlt2 } from "react-icons/bi";
 import { FaCaretDown } from "react-icons/fa";
-import { PiPackage, PiShoppingCart } from "react-icons/pi";
-import { TbClipboardText, TbUsersGroup } from "react-icons/tb";
-import { HiOutlineBadgeCheck } from "react-icons/hi";
-import { CgProfile } from "react-icons/cg";
+import { useEffect, useRef, useState } from "react";
 
-const SideBar = () => {
+const SideBar = ({ menuItems }) => {
+  const [active, setActive] = useState("Dashboard");
+  const [indicatorTop, setIndicatorTop] = useState(0);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const activeItem = containerRef.current.querySelector(".active");
+    if (activeItem) {
+      const offsetTop = activeItem.offsetTop;
+      const itemHeight = activeItem.offsetHeight;
+      setIndicatorTop(offsetTop + itemHeight / 2 - 8); // 8 is half of the indicator height (h-4)
+    }
+  }, [active]);
+
   return (
     <aside className="h-full w-[20vw] xl:w-[15vw] border-primaryColor border-r-[1.5px] py-5 flex flex-col justify-between">
       <div>
@@ -15,39 +26,24 @@ const SideBar = () => {
           <h1 className="font-bold text-xl">SwapT</h1>
         </div>
 
-        <div className="flex flex-col sidebarLinks">
-          <Link href="/dashboard">
-            <BiSolidDashboard />
-            <span>Dashboard</span>
-          </Link>
-          <Link href="/dashboard">
-            <PiPackage />
-            <span>Products</span>
-          </Link>
-          <Link href="/dashboard">
-            <BiBarChartAlt2 />
-            <span>Analytics</span>
-          </Link>
-          <Link href="/dashboard">
-            <TbClipboardText />
-            <span>Report</span>
-          </Link>
-          <Link href="/dashboard">
-            <PiShoppingCart />
-            <span>Orders</span>
-          </Link>
-          <Link href="/dashboard">
-            <TbUsersGroup />
-            <span>Customer</span>
-          </Link>
-          <Link href="/dashboard">
-            <HiOutlineBadgeCheck />
-            <span>Integrations</span>
-          </Link>
-          <Link href="/dashboard">
-            <CgProfile />
-            <span>Profile</span>
-          </Link>
+        <div className="flex flex-col sidebarLinks relative" ref={containerRef}>
+          {menuItems.map((item) => (
+            <Link
+              href={item.link}
+              onClick={() => setActive(item.name)}
+              key={item.name}
+              className={`relative w-full text-sm font-medium flex items-center mb-6 pl-8 transition-colors duration-200 ${
+                active === item.name ? "text-secondaryBlue active" : "hover:text-secondaryBlue"
+              }`}
+            >
+              {item.icon}
+              <span className="ml-4">{item.name}</span>
+            </Link>
+          ))}
+          <span
+            className="absolute left-0 w-1 h-4 bg-blue-600 rounded-r-lg transition-all duration-500"
+            style={{ top: `${indicatorTop}px` }}
+          />
         </div>
       </div>
 
