@@ -7,7 +7,6 @@ import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const SideBar = ({ menuItems }) => {
-  // const [active, setActive] = useState("Dashboard");
   const [indicatorTop, setIndicatorTop] = useState(0);
   const containerRef = useRef(null);
   const route = usePathname();

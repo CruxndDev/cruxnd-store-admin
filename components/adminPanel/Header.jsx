@@ -1,12 +1,27 @@
+"use client"
+
 import Image from "next/image";
 import { IoMdSettings } from "react-icons/io";
 import { GoBell } from "react-icons/go";
 import { CgSearch } from "react-icons/cg";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
-const Header = () => {
+const Header = ({ menuLinks }) => {
+  const [currentPage, setCurrentPage] = useState()
+  const route = usePathname();
+
+  useEffect(() => {
+    menuLinks.forEach(item => {
+      if (route.startsWith(item.link)) {
+        setCurrentPage(item.name);
+      }
+    });
+  })
+
   return (
     <header className="h-[10vh] flex items-center justify-between border-primaryColor border-b-[1.5px] px-10">
-      <h1 className="font-bold text-xl">Dashboard</h1>
+      <h1 className="font-bold text-xl">{currentPage}</h1>
 
       <div className="flex items-center">
         <form className="relative w-fit flex items-center mr-14">

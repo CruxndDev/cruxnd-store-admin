@@ -22,7 +22,7 @@ const AdminPanelLayout = ({ children }) => {
     <div className="flex h-screen text-primaryColor">
       <SideBar menuItems={menuLinks} />
       <div className="flex-grow flex flex-col">
-        <Header />
+        <Header menuLinks={menuLinks} />
         <div className="flex-grow">{children}</div>
       </div>
     </div>
