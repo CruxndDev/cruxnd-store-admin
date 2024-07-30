@@ -5,7 +5,7 @@ import { CgSearch } from "react-icons/cg";
 
 const Header = () => {
   return (
-    <header className="h-[10vh] flex items-center justify-between rounded-xl border-primaryColor border-[1.5px] px-10">
+    <header className="h-[10vh] flex items-center justify-between border-primaryColor border-b-[1.5px] px-10">
       <h1 className="font-bold text-xl">Dashboard</h1>
 
       <div className="flex items-center">
