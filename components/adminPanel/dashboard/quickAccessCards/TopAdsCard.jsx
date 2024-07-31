@@ -1,6 +1,6 @@
 const TopAdsCard = () => {
   return (
-    <div>
+    <div className="overflow-hidden border border-black w-full h-[55%] mb-2">
       <div>
         <h3>Top Ads</h3>
       </div>

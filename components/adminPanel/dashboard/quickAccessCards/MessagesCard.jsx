@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const MessagesCard = () => {
   return (
-    <div>
+    <div className="overflow-hidden border border-black w-[70%] h-[35%]">
       <h2>Messages</h2>
 
       <div>

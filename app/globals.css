@@ -5,3 +5,7 @@
 .sidebarLinks svg {
   @apply text-3xl mr-4;
 }
+
+.dashBoardStatCardsWrapper > div {
+  @apply w-[22%] h-[7.5rem] border border-black;
+}

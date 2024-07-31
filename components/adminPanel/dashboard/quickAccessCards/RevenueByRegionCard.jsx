@@ -1,6 +1,6 @@
 const RevenueByRegionCard = () => {
   return (
-    <div>
+    <div className="border border-black w-[24%] h-[50%]">
       <div>
         <h3>Revenue by Region</h3>
       </div>
