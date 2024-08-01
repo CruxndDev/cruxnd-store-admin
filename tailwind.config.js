@@ -13,6 +13,9 @@ module.exports = {
         'accentGreen': '#16E32B', // Green
         'gray': '#565566',
         'lightGray': '#F3F3F4',
+      },
+      fontSize: {
+        'text-md': '15px',
       }
     },
   },
