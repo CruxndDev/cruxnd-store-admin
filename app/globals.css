@@ -7,5 +7,39 @@
 }
 
 .dashBoardStatCardsWrapper > div {
-  @apply w-[22%] h-[7.5rem] border border-black;
+  @apply w-[20%] rounded-xl drop-shadow-2xl flex flex-col justify-center px-4 py-6;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.dashBoardStatCardsWrapper h3 {
+  @apply font-medium text-sm mb-1;
+}
+
+.dashBoardStatCardsWrapper h1 {
+  @apply font-semibold text-2xl mb-1;
+}
+
+.dashBoardStatCardsWrapper p {
+  @apply font-medium text-gray;
+}
+
+
+
+.gradient-star {
+  color: transparent;
+  background: linear-gradient(
+    to bottom,
+    rgba(14, 14, 44, 0.73),
+    #ae8625 9%,
+    #f7ef8a 27%,
+    #ae8625 46%,
+    #d2ac47 60%,
+    #ae8625 78%
+  );
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 17' fill='white'%3E%3Cpath d='M8.92891 0.587891L10.9327 6.75491H17.4171L12.1711 10.5663L14.1749 16.7334L8.92891 12.9219L3.68292 16.7334L5.68671 10.5663L0.440727 6.75491H6.92512L8.92891 0.587891Z'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 17' fill='white'%3E%3Cpath d='M8.92891 0.587891L10.9327 6.75491H17.4171L12.1711 10.5663L14.1749 16.7334L8.92891 12.9219L3.68292 16.7334L5.68671 10.5663L0.440727 6.75491H6.92512L8.92891 0.587891Z'/%3E%3C/svg%3E");
+  mask-repeat: no-repeat;
+  mask-size: contain;
 }
