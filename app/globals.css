@@ -42,6 +42,10 @@
   @apply font-medium text-gray text-xs;
 }
 
+.adsReachWrapper div {
+  @apply text-md flex justify-between;
+}
+
 
 
 .custom-shadow {

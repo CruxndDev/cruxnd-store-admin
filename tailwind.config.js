@@ -15,7 +15,7 @@ module.exports = {
         'lightGray': '#F3F3F4',
       },
       fontSize: {
-        'text-md': '15px',
+        'md': '15px',
       }
     },
   },
