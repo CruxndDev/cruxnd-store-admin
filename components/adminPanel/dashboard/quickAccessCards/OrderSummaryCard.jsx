@@ -6,7 +6,7 @@ const OrderSummaryCard = () => {
     <div className="w-[48%] h-[35em] flex flex-col rounded-2xl custom-shadow px-6 py-6">
       <div className="w-full flex justify-between items-center mb-10">
         <h2 className="text-xl font-semibold">Order Summary</h2>
-        <div className="custom-shadow rounded-lg p-2 flex justify-between w-[62%]">
+        <div className="custom-shadow rounded-lg p-2 flex justify-between w-[62%] text-md">
           <span>Ongoing Orders</span>
           <span>Completed</span>
           <span>Cancelled</span>
