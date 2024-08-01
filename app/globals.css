@@ -7,8 +7,9 @@
 }
 
 .dashBoardStatCardsWrapper > div {
-  @apply w-[20%] rounded-xl drop-shadow-2xl flex flex-col justify-center px-4 py-6;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  @apply w-[22%] rounded-xl drop-shadow-2xl flex flex-col justify-center px-6 py-6;
+
+  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .dashBoardStatCardsWrapper h3 {
@@ -23,7 +24,29 @@
   @apply font-medium text-gray;
 }
 
+.orderSummaryCardsWrapper div {
+  @apply w-[23%] rounded-xl drop-shadow-2xl flex flex-col justify-center px-4 py-3;
 
+  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.orderSummaryCardsWrapper h4 {
+  @apply font-medium text-xs mb-1;
+}
+
+.orderSummaryCardsWrapper h3 {
+  @apply font-semibold mb-1;
+}
+
+.orderSummaryCardsWrapper p {
+  @apply font-medium text-gray text-xs;
+}
+
+
+
+.custom-shadow {
+  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
 
 .gradient-star {
   color: transparent;
