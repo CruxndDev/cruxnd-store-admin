@@ -66,6 +66,14 @@
   @apply text-[10px] truncate-text;
 }
 
+.rbrPercentBars {
+  @apply flex flex-col;
+}
+
+.rbrPercentBars > div {
+  @apply flex justify-between mb-1;
+}
+
 .truncate-text {
   overflow: hidden;
   white-space: noWrap;
