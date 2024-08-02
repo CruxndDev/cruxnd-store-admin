@@ -1,5 +1,5 @@
 import Image from "next/image";
-import pieChart from "@public/piechart.svg";
+import pieChart from "@public/assets/dashboard/piechart.svg";
 import { BsThreeDots } from "react-icons/bs";
 
 const TopAdsCard = () => {
