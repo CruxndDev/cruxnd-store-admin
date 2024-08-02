@@ -3,5 +3,100 @@
 @tailwind utilities;
 
 .sidebarLinks svg {
-  @apply text-3xl mr-4;
+  @apply text-2xl xl:text-3xl mr-2 xl:mr-4;
+}
+
+.dashBoardStatCardsWrapper > div {
+  @apply md:text-sm xl:text-[16px] w-[24%] xl:w-[22%] rounded-xl drop-shadow-2xl flex flex-col justify-center px-8 lg:px-6 py-6;
+
+  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.dashBoardStatCardsWrapper h3 {
+  @apply font-medium text-sm mb-1;
+}
+
+.dashBoardStatCardsWrapper h1 {
+  @apply font-semibold text-2xl mb-1;
+}
+
+.dashBoardStatCardsWrapper p {
+  @apply font-medium text-gray;
+}
+
+.orderSummaryCardsWrapper div {
+  @apply w-[24%] xl:w-[23%] rounded-xl drop-shadow-2xl flex flex-col justify-center px-4 py-3;
+
+  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.orderSummaryCardsWrapper h4 {
+  @apply font-medium text-xs mb-1;
+}
+
+.orderSummaryCardsWrapper h3 {
+  @apply font-semibold mb-1;
+}
+
+.orderSummaryCardsWrapper p {
+  @apply font-medium text-gray text-xs;
+}
+
+.adsReachWrapper div {
+  @apply text-sm flex justify-between;
+}
+
+.chatsWrapper > div {
+  @apply flex items-center mb-3 w-full;
+}
+
+.chatsWrapper img {
+  @apply aspect-square w-8 h-8;
+}
+
+.chatsWrapper span {
+  @apply w-[65%] xl:w-[75%] 2xl:[80%] flex flex-col;
+}
+
+.chatsWrapper h3 {
+  @apply text-xs font-semibold;
+}
+
+.chatsWrapper p {
+  @apply w-full text-[10px] truncate-text;
+}
+
+.rbrPercentBars {
+  @apply flex flex-col;
+}
+
+.rbrPercentBars > div {
+  @apply flex justify-between mb-1;
+}
+
+.truncate-text {
+  @apply overflow-hidden text-nowrap overflow-ellipsis;
+}
+
+.custom-shadow {
+  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.gradient-star {
+  color: transparent;
+  background: linear-gradient(
+    to bottom,
+    rgba(14, 14, 44, 0.73),
+    #ae8625 9%,
+    #f7ef8a 27%,
+    #ae8625 46%,
+    #d2ac47 60%,
+    #ae8625 78%
+  );
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 17' fill='white'%3E%3Cpath d='M8.92891 0.587891L10.9327 6.75491H17.4171L12.1711 10.5663L14.1749 16.7334L8.92891 12.9219L3.68292 16.7334L5.68671 10.5663L0.440727 6.75491H6.92512L8.92891 0.587891Z'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 17' fill='white'%3E%3Cpath d='M8.92891 0.587891L10.9327 6.75491H17.4171L12.1711 10.5663L14.1749 16.7334L8.92891 12.9219L3.68292 16.7334L5.68671 10.5663L0.440727 6.75491H6.92512L8.92891 0.587891Z'/%3E%3C/svg%3E");
+  mask-repeat: no-repeat;
+  mask-size: contain;
 }
