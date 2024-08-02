@@ -55,7 +55,7 @@
 }
 
 .chatsWrapper span {
-  @apply w-[65%] xl:w-[75%] 2xl:[80%] flex flex-col;
+  @apply w-[65%] xl:w-[75%] 2xl:w-[80%] flex flex-col;
 }
 
 .chatsWrapper h3 {
