@@ -21,7 +21,7 @@ const SideBar = ({ menuItems }) => {
   }, [route]);
 
   return (
-    <aside className="h-full w-[20vw] xl:w-[15vw] border-primaryColor border-r-[1.5px] py-5 flex flex-col justify-between">
+    <aside className="h-full w-[25vw] xl:w-[20vw] border-primaryColor border-r-[1.5px] py-5 flex flex-col justify-between">
       <div>
         <div className="text-center mb-14">
           <h1 className="font-bold text-xl">SwapT</h1>
@@ -32,7 +32,7 @@ const SideBar = ({ menuItems }) => {
             <Link
               href={item.link}
               key={item.name}
-              className={`relative w-full text-sm font-medium flex items-center mb-6 pl-8 transition-colors duration-200 ${
+              className={`relative w-full text-sm font-medium flex items-center mb-6 pl-6 xl:pl-8 transition-colors duration-200 ${
                 route.startsWith(item.link) ? "text-secondaryBlue active" : "hover:text-secondaryBlue"
               }`}
             >

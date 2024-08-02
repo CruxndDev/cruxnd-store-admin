@@ -11,6 +11,11 @@ module.exports = {
         'primaryColor': '#0E0E2C', // Dark Blue
         'secondaryBlue': '#5281F8', // Light Blue
         'accentGreen': '#16E32B', // Green
+        'gray': '#565566',
+        'lightGray': '#F3F3F4',
+      },
+      fontSize: {
+        'md': '15px',
       }
     },
   },
