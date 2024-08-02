@@ -46,7 +46,31 @@
   @apply text-md flex justify-between;
 }
 
+.chatsWrapper > div {
+  @apply flex items-center w-[90%] mb-2;
+}
 
+.chatsWrapper img {
+  @apply aspect-square w-8 h-8;
+}
+
+.chatsWrapper span {
+  @apply flex flex-col h-fit w-[80%];
+}
+
+.chatsWrapper h3 {
+  @apply text-xs font-semibold;
+}
+
+.chatsWrapper p {
+  @apply text-[10px] truncate-text;
+}
+
+.truncate-text {
+  overflow: hidden;
+  white-space: noWrap;
+  text-overflow: ellipsis;
+}
 
 .custom-shadow {
   box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);

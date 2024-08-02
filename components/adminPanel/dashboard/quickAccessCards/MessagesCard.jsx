@@ -3,10 +3,10 @@ import Link from "next/link";
 
 const MessagesCard = () => {
   return (
-    <div className="overflow-hidden border border-black w-[70%] h-[35%]">
-      <h2>Messages</h2>
+    <div className="w-[90%] h-[15em] rounded-2xl custom-shadow px-4 py-5 flex flex-col">
+      <h2 className="text-2xl font-semibold mb-3 ml-3">Messages</h2>
 
-      <div>
+      <div className="w-full chatsWrapper grid gap-y-1 mb-2">
         <div>
           <Image
             src={`/avatar.png`}
@@ -15,10 +15,10 @@ const MessagesCard = () => {
             height={45}
             className="mr-2"
           />
-          <div>
+          <span>
             <h3>Samantha Boyo</h3>
             <p>Hello sir/ma, my product was delivered on the 20th, a day...</p>
-          </div>
+          </span>
         </div>
 
         <div>
@@ -29,10 +29,10 @@ const MessagesCard = () => {
             height={45}
             className="mr-2"
           />
-          <div>
+          <span>
             <h3>Samantha Boyo</h3>
             <p>Hello sir/ma, my product was delivered on the 20th, a day...</p>
-          </div>
+          </span>
         </div>
 
         <div>
@@ -43,14 +43,14 @@ const MessagesCard = () => {
             height={45}
             className="mr-2"
           />
-          <div>
+          <span>
             <h3>Samantha Boyo</h3>
             <p>Hello sir/ma, my product was delivered on the 20th, a day...</p>
-          </div>
+          </span>
         </div>
       </div>
 
-      <Link href={`/messages`} />
+      <Link href={`/messages`} className="text-white bg-primaryColor text-xs self-end rounded-md px-5 py-1">View all</Link>
     </div>
   );
 };
