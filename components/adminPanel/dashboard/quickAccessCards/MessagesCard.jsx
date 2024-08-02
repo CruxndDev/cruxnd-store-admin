@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const MessagesCard = () => {
   return (
-    <div className="w-[90%] h-[15em] rounded-2xl custom-shadow px-4 py-5 flex flex-col">
+    <div className="w-full min-h-fit rounded-2xl custom-shadow px-4 py-5 flex flex-col">
       <h2 className="text-2xl font-semibold mb-3 ml-3">Messages</h2>
 
       <div className="w-full chatsWrapper grid gap-y-1 mb-2">

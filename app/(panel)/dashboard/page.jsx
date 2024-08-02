@@ -11,7 +11,7 @@ import { IoChevronDownCircleOutline } from "react-icons/io5";
 import { IoMdStar } from "react-icons/io";
 const Dashboard = () => {
   return (
-    <div className="h-full w-full flex flex-col px-10 py-12 overflow-y-scroll">
+    <div className="h-full w-full flex flex-col px-6 py-12 overflow-y-scroll">
       <div className="flex justify-between mb-6">
         <div className="h-fit flex items-center">
           <h1 className="font-bold text-xl mr-3">SwapT</h1>
@@ -46,7 +46,7 @@ const Dashboard = () => {
       <div className="flex justify-between">
         <OrderSummaryCard />
 
-        <div className="w-[25%] flex flex-col">
+        <div className="w-[26%] flex flex-col">
           <TopAdsCard />
           <MessagesCard />
         </div>

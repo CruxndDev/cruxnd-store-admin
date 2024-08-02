@@ -21,7 +21,7 @@ const Header = ({ menuLinks }) => {
 
   return (
     <header
-      className="h-[10vh] flex items-center justify-between px-10"
+      className="h-[10vh] flex items-center justify-between px-5 xl:px-10"
       style={{ boxShadow: "0 4px 4px -4px rgb(0, 0, 0)" }}
     >
       <h1 className="font-bold text-xl">{currentPage}</h1>

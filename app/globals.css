@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .sidebarLinks svg {
-  @apply text-3xl mr-4;
+  @apply text-2xl xl:text-3xl mr-2 xl:mr-4;
 }
 
 .dashBoardStatCardsWrapper > div {
-  @apply w-[22%] rounded-xl drop-shadow-2xl flex flex-col justify-center px-6 py-6;
+  @apply md:text-sm xl:text-[16px] w-[24%] xl:w-[22%] rounded-xl drop-shadow-2xl flex flex-col justify-center px-8 lg:px-6 py-6;
 
   box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
@@ -25,7 +25,7 @@
 }
 
 .orderSummaryCardsWrapper div {
-  @apply w-[23%] rounded-xl drop-shadow-2xl flex flex-col justify-center px-4 py-3;
+  @apply w-[24%] xl:w-[23%] rounded-xl drop-shadow-2xl flex flex-col justify-center px-4 py-3;
 
   box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
@@ -43,11 +43,11 @@
 }
 
 .adsReachWrapper div {
-  @apply text-md flex justify-between;
+  @apply text-sm flex justify-between;
 }
 
 .chatsWrapper > div {
-  @apply flex items-center w-[90%] mb-2;
+  @apply flex items-center mb-3 w-full;
 }
 
 .chatsWrapper img {
@@ -55,7 +55,7 @@
 }
 
 .chatsWrapper span {
-  @apply flex flex-col h-fit w-[80%];
+  @apply w-[65%] xl:w-[75%] 2xl:[80%] flex flex-col;
 }
 
 .chatsWrapper h3 {
@@ -63,7 +63,7 @@
 }
 
 .chatsWrapper p {
-  @apply text-[10px] truncate-text;
+  @apply w-full text-[10px] truncate-text;
 }
 
 .rbrPercentBars {
@@ -75,9 +75,7 @@
 }
 
 .truncate-text {
-  overflow: hidden;
-  white-space: noWrap;
-  text-overflow: ellipsis;
+  @apply overflow-hidden text-nowrap overflow-ellipsis;
 }
 
 .custom-shadow {

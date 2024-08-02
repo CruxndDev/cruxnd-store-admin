@@ -4,7 +4,7 @@ import { BsThreeDots } from "react-icons/bs";
 
 const TopAdsCard = () => {
   return (
-    <div className="w-full h-[26em] rounded-2xl custom-shadow flex flex-col mb-4 px-6 py-6">
+    <div className="w-full min-h-fit rounded-2xl custom-shadow flex flex-col mb-4 px-4 py-6">
       <div className="font-semibold text-lg flex justify-between items-center mb-8">
         <h3>Top Ads</h3>
         <button className="cursor-pointer w-fit self-center">
@@ -20,7 +20,7 @@ const TopAdsCard = () => {
         className="w-32 mb-6 self-center"
       />
 
-      <div className="adsReachWrapper grid gap-y-2">
+      <div className="adsReachWrapper grid gap-y-2 text-sm">
         <div>
           <span>Fashion Ads campaign</span>
           <span>38.6k reach</span>
