@@ -6,6 +6,7 @@ import { GoBell } from "react-icons/go";
 import { CgSearch } from "react-icons/cg";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import avatarImage from '@public/assets/avatar.png';
 
 const Header = ({ menuLinks }) => {
   const [currentPage, setCurrentPage] = useState();
@@ -46,7 +47,7 @@ const Header = ({ menuLinks }) => {
             <p className="font-semibold mr-2">Hello, Tehilla!</p>
 
             <Image
-              src={`/avatar.png`}
+              src={avatarImage}
               alt="Avatar Image"
               width={30}
               height={30}
