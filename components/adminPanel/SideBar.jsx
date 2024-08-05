@@ -21,7 +21,7 @@ const SideBar = ({ menuItems }) => {
   }, [route]);
 
   return (
-    <aside className="h-full w-[25vw] xl:w-[20vw] border-primaryColor border-r-[1.5px] py-5 flex flex-col justify-between">
+    <aside className="h-full w-[18vw] xl:w-[15vw] border-primaryColor border-r-[1.5px] py-5 flex flex-col justify-between">
       <div>
         <div className="text-center mb-14">
           <h1 className="font-bold text-xl">SwapT</h1>

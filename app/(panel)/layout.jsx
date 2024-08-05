@@ -21,9 +21,9 @@ const AdminPanelLayout = ({ children }) => {
   return (
     <div className="flex h-screen text-primaryColor overflow-hidden">
       <SideBar menuItems={menuLinks} />
-      <div className="flex-grow flex flex-col">
+      <div className="w-[82vw] xl:w-[85vw] flex flex-col">
         <Header menuLinks={menuLinks} />
-        <div className="h-[90vh]">{children}</div>
+        <div className="h-[90vh] w-full">{children}</div>
       </div>
     </div>
   );

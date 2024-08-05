@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .sidebarLinks svg {
   @apply text-2xl xl:text-3xl mr-2 xl:mr-4;
 }
