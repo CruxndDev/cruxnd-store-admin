@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import avatarImage from '@public/assets/avatar.png';
 
 const MessagesCard = () => {
   return (
@@ -9,7 +10,7 @@ const MessagesCard = () => {
       <div className="w-full chatsWrapper grid gap-y-1 mb-2">
         <div>
           <Image
-            src={`/avatar.png`}
+            src={avatarImage}
             alt="Avatar Image"
             width={45}
             height={45}
