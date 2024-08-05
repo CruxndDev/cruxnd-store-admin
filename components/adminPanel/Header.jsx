@@ -32,7 +32,11 @@ const Header = ({ menuLinks }) => {
           <input
             type="text"
             placeholder="Search"
-            className="placeholder-primaryColor placeholder:font-medium w-[300px] border-[0.1px] border-primaryColor px-4 py-2 rounded-md"
+            className="placeholder-primaryColor placeholder:font-medium w-[300px] px-4 py-2 rounded-md"
+            style={{
+              boxShadow:
+                "0px 1px 1px rgba(33, 33, 33, 0.6), 0px 0px 1px rgba(33, 33, 33, 0.6)",
+            }}
           />
           <CgSearch className="absolute right-3 text-2xl" />
         </form>
