@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FaCaretDown } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
+import avatarImage from '@public/assets/avatar.png';
 
 const SideBar = ({ menuItems }) => {
   const [indicatorTop, setIndicatorTop] = useState(0);
@@ -50,7 +51,7 @@ const SideBar = ({ menuItems }) => {
       <div className="flex items-center justify-between w-full px-3">
         <div className="flex">
           <Image
-            src={`/avatar.png`}
+            src={avatarImage}
             alt="Avatar Image"
             width={45}
             height={45}
