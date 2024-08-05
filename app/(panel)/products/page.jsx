@@ -15,7 +15,7 @@ const ProductsPage = () => {
   ];
 
   return (
-    <div>
+    <div className="h-full w-full flex flex-col px-6 py-12 overflow-y-scroll">
       <SwapTFilter />
 
       <ProductsCard productCategories={productCategories} />

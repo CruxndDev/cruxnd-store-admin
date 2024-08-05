@@ -13,9 +13,7 @@
 }
 
 .dashBoardStatCardsWrapper > div {
-  @apply md:text-sm xl:text-[16px] w-[24%] xl:w-[22%] rounded-xl drop-shadow-2xl flex flex-col justify-center px-8 lg:px-6 py-6;
-
-  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  @apply md:text-sm xl:text-[16px] w-[24%] xl:w-[22%] rounded-xl flex flex-col justify-center px-8 lg:px-6 py-6 custom-shadow;
 }
 
 .dashBoardStatCardsWrapper h3 {
@@ -31,9 +29,7 @@
 }
 
 .orderSummaryCardsWrapper div {
-  @apply w-[24%] xl:w-[23%] rounded-xl drop-shadow-2xl flex flex-col justify-center px-4 py-3;
-
-  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  @apply custom-shadow w-[24%] xl:w-[23%] rounded-xl drop-shadow-2xl flex flex-col justify-center px-4 py-3;
 }
 
 .orderSummaryCardsWrapper h4 {
@@ -78,6 +74,10 @@
 
 .rbrPercentBars > div {
   @apply flex justify-between mb-1;
+}
+
+.productImages > div {
+  @apply bg-gray aspect-square w-20 xl:w-24 2xl:w-28 rounded-lg; 
 }
 
 .truncate-text {
