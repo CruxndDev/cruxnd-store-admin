@@ -1,6 +1,7 @@
 import { HiOutlineTruck, HiOutlineUserGroup } from "react-icons/hi";
 import { AiOutlineDollarCircle } from "react-icons/ai";
 import { TbAntennaBars5 } from "react-icons/tb";
+import GeneralStats from "@components/adminPanel/analytics/GeneralStats";
 
 const AnalyticsPage = () => {
   const generalStats = [
@@ -22,14 +23,7 @@ const AnalyticsPage = () => {
 
   return (
     <div className="h-full w-full px-6 py-12 overflow-y-auto">
-      <div className="w-full flex justify-between mb-8">
-        {generalStats.map((item) => (
-          <div
-            key={item.key}
-            className="custom-shadow w-[23%] h-[18vh] rounded-xl"
-          ></div>
-        ))}
-      </div>
+      <GeneralStats data={generalStats} />
 
       <div className="custom-shadow w-full h-[65vh] mb-8 rounded-xl"></div>
 
