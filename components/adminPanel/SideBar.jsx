@@ -5,7 +5,7 @@ import Link from "next/link";
 import { FaCaretDown } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import avatarImage from '@public/assets/avatar.png';
+import avatarImage from "@public/assets/avatar.png";
 
 const SideBar = ({ menuItems }) => {
   const [indicatorTop, setIndicatorTop] = useState(0);
@@ -22,7 +22,10 @@ const SideBar = ({ menuItems }) => {
   }, [route]);
 
   return (
-    <aside className="h-full w-[18vw] xl:w-[15vw] border-primaryColor border-r-[1.5px] py-5 flex flex-col justify-between">
+    <aside
+      className="h-full w-[18vw] xl:w-[15vw] py-5 flex flex-col justify-between"
+      style={{ boxShadow: "4px 0 4px -4px rgb(0, 0, 0)" }}
+    >
       <div>
         <div className="text-center mb-14">
           <h1 className="font-bold text-xl">SwapT</h1>
@@ -34,7 +37,9 @@ const SideBar = ({ menuItems }) => {
               href={item.link}
               key={item.name}
               className={`relative w-full text-sm font-medium flex items-center mb-6 pl-6 xl:pl-8 transition-colors duration-200 ${
-                route.startsWith(item.link) ? "text-secondaryBlue active" : "hover:text-secondaryBlue"
+                route.startsWith(item.link)
+                  ? "text-secondaryBlue active"
+                  : "hover:text-secondaryBlue"
               }`}
             >
               {item.icon}
