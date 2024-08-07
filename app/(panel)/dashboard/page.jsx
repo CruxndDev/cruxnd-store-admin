@@ -10,7 +10,7 @@ import SwapTFilter from "@components/adminPanel/SwapTFilter";
 
 const Dashboard = () => {
   return (
-    <div className="h-full w-full flex flex-col px-6 py-12 overflow-y-scroll">
+    <div className="h-full w-full flex flex-col px-6 py-12 overflow-y-auto">
       <SwapTFilter />
 
       <div className="dashBoardStatCardsWrapper flex justify-between mb-4">
