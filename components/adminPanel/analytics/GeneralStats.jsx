@@ -1,9 +1,9 @@
 const GeneralStats = ({ data }) => {
   return (
     <div className="w-full flex justify-between mb-8">
-      {data.map((item) => (
+      {data.map((item, index) => (
         <div
-          key={item.key}
+          key={index}
           className="md:text-sm xl:text-[16px] w-[24%] xl:w-[22%] flex justify-between items-center custom-shadow rounded-xl px-8 lg:px-6 py-6"
         >
           <div>

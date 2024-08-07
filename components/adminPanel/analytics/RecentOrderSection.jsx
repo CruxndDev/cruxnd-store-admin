@@ -9,8 +9,8 @@ const RecentOrderSection = ({ data }) => {
       </div>
 
       <div>
-        {data.map((item) => (
-          <div key={item.key} className="flex items-center justify-between mb-4">
+        {data.map((item, index) => (
+          <div key={index} className="flex items-center justify-between mb-4">
             <div className="flex items-center">
               <div className="bg-primaryColor h-12 w-14 rounded-md mr-3"></div>
 

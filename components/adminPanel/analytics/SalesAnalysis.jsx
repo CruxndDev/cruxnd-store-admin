@@ -26,8 +26,8 @@ const SalesAnalysis = ({ data }) => {
       </div>
 
       <div className="flex divide-x-2 mb-10">
-        {data.map((item) => (
-          <div key={item.key} className="flex flex-col pr-8 pl-12 first:pl-0">
+        {data.map((item, index) => (
+          <div key={index} className="flex flex-col pr-8 pl-12 first:pl-0">
             <div className="text-sm font-medium mb-2">{item.name}</div>
 
             <div className="text-sm font-medium flex items-center">
