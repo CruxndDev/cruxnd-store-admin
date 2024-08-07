@@ -3,6 +3,7 @@ import { AiOutlineDollarCircle } from "react-icons/ai";
 import { TbAntennaBars5 } from "react-icons/tb";
 import GeneralStats from "@components/adminPanel/analytics/GeneralStats";
 import SalesAnalysis from "@components/adminPanel/analytics/SalesAnalysis";
+import RecentOrderSection from "@components/adminPanel/analytics/RecentOrderSection";
 
 const AnalyticsPage = () => {
   const generalStats = [
@@ -28,6 +29,14 @@ const AnalyticsPage = () => {
     { key: 2, name: "Balance", value: "$145,201.00", percentage: "+0.02%" },
   ];
 
+  const recentOrders = [
+    { key: 0, name: "Macbook Pro 16", time: "1 second ago", price: "$105.55"},
+    { key: 1, name: "Macbook Pro 16", time: "1 second ago", price: "$105.55"},
+    { key: 2, name: "Macbook Pro 16", time: "1 second ago", price: "$105.55"},
+    { key: 3, name: "Macbook Pro 16", time: "1 second ago", price: "$105.55"},
+    { key: 4, name: "Macbook Pro 16", time: "1 second ago", price: "$105.55"},
+  ];
+
   return (
     <div className="h-full w-full px-6 py-12 overflow-y-auto">
       <GeneralStats data={generalStats} />
@@ -35,7 +44,7 @@ const AnalyticsPage = () => {
       <SalesAnalysis data={salesStats} />
 
       <div className="w-full flex justify-between">
-        <div className="custom-shadow w-[28%] h-[50vh] rounded-xl"></div>
+        <RecentOrderSection data={recentOrders} />
         <div className="custom-shadow w-[70%] h-[48vh] rounded-xl"></div>
       </div>
     </div>
