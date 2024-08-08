@@ -12,6 +12,7 @@ module.exports = {
         'secondaryBlue': '#5281F8', // Light Blue
         'accentGreen': '#16E32B', // Green
         'gray': '#475467',
+        'mediumGray': '#D0D5DD',
         'lightGray': '#F3F3F4',
       },
       fontSize: {
