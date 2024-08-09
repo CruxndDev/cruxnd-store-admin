@@ -1,6 +1,6 @@
 const OrderDetailsInfoSection = () => {
   return (
-    <div></div>
+    <div className="w-full h-[70vh] rounded-lg custom-shadow mb-4"></div>
   );
 }
  

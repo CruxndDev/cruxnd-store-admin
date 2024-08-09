@@ -2,7 +2,7 @@ import OrderDetailsInfoSection from "@components/adminPanel/orders/orderDetails/
 import OrderDetailsProfileSection from "@components/adminPanel/orders/orderDetails/OrderDetailsProfileSection";
 import OrderItemsSection from "@components/adminPanel/orders/orderDetails/OrderItemsSection";
 import DeliveryNotes from "@components/adminPanel/orders/orderDetails/orderNotes/DeliveryNotes";
-import OrderOrdersNote from "@components/adminPanel/orders/orderDetails/orderNotes/OrderOrdersNote";
+import OrderOrdersNotes from "@components/adminPanel/orders/orderDetails/orderNotes/OrderOrdersNotes";
 import OrderTrackingSection from "@components/adminPanel/orders/orderDetails/OrderTrackingSection";
 
 const OrderDetailsPage = ({ params }) => {
@@ -10,23 +10,31 @@ const OrderDetailsPage = ({ params }) => {
 
   return (
     <div className="h-full w-full flex flex-col px-6 py-12 overflow-y-auto">
-      <h2>#{id}</h2>
+      <h2 className="text-xl font-semibold mb-3">Order ID #{id}</h2>
 
       <div className="flex justify-between">
-        <small>Orders / Order Details</small>
+        <div className="w-[25%]">
+          <p className="text-gray text-xs font-medium mb-8">Orders / Order Details</p>
+          <OrderDetailsProfileSection />
+          <OrderDetailsInfoSection />
+        </div>
 
-        <OrderDetailsProfileSection />
+        <div className="w-[73%]">
+          <div className="text-gray text-xs font-medium mb-4">
+            <p>Date Ordered: 11/03/2024</p>
+            <p>Date Delivered: 12/03/2024</p>
+          </div>
 
-        <OrderDetailsInfoSection />
+          <OrderItemsSection />
+          
+          <div className="relative h-fit">
+            <OrderTrackingSection />
 
-        <OrderItemsSection />
-
-        <div>
-          <OrderTrackingSection />
-
-          <DeliveryNotes />
-
-          <OrderOrdersNotes />
+            <div className="absolute flex top-[20rem] ml-20">
+              <DeliveryNotes />
+              <OrderOrdersNotes />
+            </div>
+          </div>
         </div>
       </div>
     </div>

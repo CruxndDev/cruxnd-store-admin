@@ -1,6 +1,8 @@
 const OrderTrackingSection = () => {
   return (
-    <div></div>
+    <div className="w-full h-[50vh] rounded-lg custom-shadow">
+
+    </div>
   );
 }
  
