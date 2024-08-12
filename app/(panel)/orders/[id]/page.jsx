@@ -30,7 +30,7 @@ const OrderDetailsPage = ({ params }) => {
           <div className="relative h-fit">
             <OrderTrackingSection />
 
-            <div className="absolute flex top-[20rem] ml-20">
+            <div className="absolute z-50 flex top-[20rem] ml-20">
               <DeliveryNotes />
               <OrderOrdersNotes />
             </div>

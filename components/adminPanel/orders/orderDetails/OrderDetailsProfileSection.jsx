@@ -1,7 +1,6 @@
 import Image from "next/image";
 import avatarImage from "@public/assets/avatar.svg";
 import confirmedIcon from "@public/assets/orders/confirmedIcon.svg";
-import orderTrackingMap from "@public/assets/orders/orderTrackingMap.svg";
 
 const OrderDetailsProfileSection = () => {
   return (
