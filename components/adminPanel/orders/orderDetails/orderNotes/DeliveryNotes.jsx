@@ -1,6 +1,15 @@
 const DeliveryNotes = () => {
   return (
-    <div className="relative z-50 bg-white h-[30vh] w-[20rem] rounded-lg custom-shadow mr-6"></div>
+    <div className="orderNotes mr-6">
+      <h4>Delivery Notes</h4>
+      <div>
+        <p>
+          Please drop off at the gate right beside mine, I won’t be available at
+          9:00pm tonight
+        </p>
+        <p>Also, ask my sister to give you a hint!</p>
+      </div>
+    </div>
   );
 };
 

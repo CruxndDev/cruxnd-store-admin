@@ -1,6 +1,11 @@
 const OrderOrdersNotes = () => {
   return (
-    <div className="bg-white relative z-50 h-[30vh] w-[20rem] rounded-lg custom-shadow"></div>
+    <div className="orderNotes">
+      <h4>Order Orders:</h4>
+      <div>
+        <p>Order has successfully arrived with dispatch rider.</p>
+      </div>
+    </div>
   );
 };
 
