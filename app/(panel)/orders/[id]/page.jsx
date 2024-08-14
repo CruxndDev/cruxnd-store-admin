@@ -4,9 +4,11 @@ import OrderItemsSection from "@components/adminPanel/orders/orderDetails/OrderI
 import DeliveryNotes from "@components/adminPanel/orders/orderDetails/orderNotes/DeliveryNotes";
 import OrderOrdersNotes from "@components/adminPanel/orders/orderDetails/orderNotes/OrderOrdersNotes";
 import OrderTrackingSection from "@components/adminPanel/orders/orderDetails/OrderTrackingSection";
+import { orderItems } from "@utils/arrays";
 
 const OrderDetailsPage = ({ params }) => {
   const id = params.id;
+  const orderItemsArray = orderItems;
 
   return (
     <div className="h-full w-full flex flex-col px-6 py-12 overflow-y-auto">
@@ -25,7 +27,7 @@ const OrderDetailsPage = ({ params }) => {
             <p>Date Delivered: 12/03/2024</p>
           </div>
 
-          <OrderItemsSection />
+          <OrderItemsSection data={orderItems} />
           
           <div className="relative h-fit">
             <OrderTrackingSection />
