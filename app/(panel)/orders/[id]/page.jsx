@@ -8,7 +8,6 @@ import { orderItems } from "@utils/arrays";
 
 const OrderDetailsPage = ({ params }) => {
   const id = params.id;
-  const orderItemsArray = orderItems;
 
   return (
     <div className="h-full w-full flex flex-col px-6 py-12 overflow-y-auto">
@@ -18,7 +17,7 @@ const OrderDetailsPage = ({ params }) => {
         <div className="w-[25%]">
           <p className="text-gray text-xs font-medium mb-8">Orders / Order Details</p>
           <OrderDetailsProfileSection />
-          <OrderDetailsInfoSection />
+          <OrderDetailsInfoSection orderID={id} />
         </div>
 
         <div className="w-[73%]">
