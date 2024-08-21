@@ -15,7 +15,9 @@ const OrderDetailsPage = ({ params }) => {
 
       <div className="flex justify-between">
         <div className="w-[25%]">
-          <p className="text-gray text-xs font-medium mb-8">Orders / Order Details</p>
+          <p className="text-gray text-xs font-medium mb-8">
+            Orders / Order Details
+          </p>
           <OrderDetailsProfileSection />
           <OrderDetailsInfoSection orderID={id} />
         </div>
@@ -27,7 +29,7 @@ const OrderDetailsPage = ({ params }) => {
           </div>
 
           <OrderItemsSection data={orderItems} />
-          
+
           <div className="relative h-fit">
             <OrderTrackingSection />
 

@@ -6,9 +6,12 @@ import Image from "next/image";
 import { BsChatSquareText } from "react-icons/bs";
 import { LiaPhoneSolid } from "react-icons/lia";
 
-const OrderDetailsInfoSection = ({ orderID }) => {
+const OrderDetailsInfoSection = ({ orderID, width, marginBottom }) => {
   return (
-    <div className="w-full rounded-lg custom-shadow mb-4 p-4">
+    <div
+      style={{ width, marginBottom }}
+      className={`w-full bg-white rounded-lg custom-shadow mb-4 p-4`}
+    >
       <div className="flex justify-between items-center mb-4">
         <div>
           <small className="text-gray text-xs font-medium">{`Order ID (Pack)`}</small>
@@ -75,7 +78,13 @@ const OrderDetailsInfoSection = ({ orderID }) => {
 
       <div className="py-4">
         <div className="flex justify-between items-center mb-4">
-          <Image src={avatarImage} alt="Avatar Image" width={50} height={50} className="h-10" />
+          <Image
+            src={avatarImage}
+            alt="Avatar Image"
+            width={50}
+            height={50}
+            className="h-10"
+          />
 
           <div className="w-[35%]">
             <small className="font-medium">Purchase Client</small>
@@ -90,7 +99,13 @@ const OrderDetailsInfoSection = ({ orderID }) => {
         </div>
 
         <div className="flex items-center justify-between">
-          <Image src={avatarImage} alt="Avatar Image" width={50} height={50} className="h-10" />
+          <Image
+            src={avatarImage}
+            alt="Avatar Image"
+            width={50}
+            height={50}
+            className="h-10"
+          />
 
           <div className="w-[35%]">
             <small className="font-medium">Transport Client</small>
