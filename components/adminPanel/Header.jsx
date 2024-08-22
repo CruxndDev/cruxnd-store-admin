@@ -6,7 +6,7 @@ import { GoBell } from "react-icons/go";
 import { CgSearch } from "react-icons/cg";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import avatarImage from '@public/assets/avatar.png';
+import avatarImage from "@public/assets/avatar.png";
 
 const Header = ({ menuLinks }) => {
   const [currentPage, setCurrentPage] = useState();

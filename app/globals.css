@@ -80,6 +80,22 @@
   @apply bg-gray aspect-square w-20 xl:w-24 2xl:w-28 rounded-lg; 
 }
 
+.orderNotes {
+  @apply bg-white relative z-50 min-h-[25vh] w-[20rem] rounded-lg custom-shadow px-6 py-4;
+}
+
+.orderNotes h4 {
+  @apply text-lg font-semibold underline mb-1;
+}
+
+.orderNotes p {
+  @apply text-sm;
+}
+
+.orderNotes p:first-child {
+  @apply mb-2;
+}
+
 .truncate-text {
   @apply overflow-hidden text-nowrap overflow-ellipsis;
 }
