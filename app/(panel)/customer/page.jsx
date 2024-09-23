@@ -1,3 +1,4 @@
+import ChatsSection from "@components/adminPanel/customer/ChatsSection";
 import SocialMediaPanel from "@components/adminPanel/customer/SocialMediaPanel";
 
 const CustomerPage = () => {
@@ -5,25 +6,10 @@ const CustomerPage = () => {
     <div>
       <div>
         <SocialMediaPanel />
-
-        <div>
-          <div>
-            <div>
-              <input type="text" />
-            </div>
-
-            <button>Complaints</button>
-          </div>
-
-          <div>
-            <div>
-              
-            </div>
-            <div></div>
-          </div>
-        </div>
+        <ChatsSection />
       </div>
-      <div></div>
+
+      
     </div>
   );
 };

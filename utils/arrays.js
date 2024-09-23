@@ -104,3 +104,61 @@ export const orderItems = [
     status: "In delivery",
   },
 ];
+
+export const chats = [
+  {
+    profileImage: "/assets/avatar.png",
+    name: "Smart Igwe",
+    lastChat: "Hello sir/ma, my product was delivered just now.",
+  },
+  {
+    profileImage: "/assets/avatar.png",
+    name: "Smart Igwe",
+    lastChat: "Hello sir/ma, my product was delivered just now.",
+  },
+  {
+    profileImage: "/assets/avatar.png",
+    name: "Smart Igwe",
+    lastChat: "Hello sir/ma, my product was delivered just now.",
+  },
+  {
+    profileImage: "/assets/avatar.png",
+    name: "Smart Igwe",
+    lastChat: "Hello sir/ma, my product was delivered just now.",
+  },
+  {
+    profileImage: "/assets/avatar.png",
+    name: "Smart Igwe",
+    lastChat: "Hello sir/ma, my product was delivered just now.",
+  },
+  {
+    profileImage: "/assets/avatar.png",
+    name: "Smart Igwe",
+    lastChat: "Hello sir/ma, my product was delivered just now.",
+  },
+  {
+    profileImage: "/assets/avatar.png",
+    name: "Smart Igwe",
+    lastChat: "Hello sir/ma, my product was delivered just now.",
+  },
+  {
+    profileImage: "/assets/avatar.png",
+    name: "Smart Igwe",
+    lastChat: "Hello sir/ma, my product was delivered just now.",
+  },
+  {
+    profileImage: "/assets/avatar.png",
+    name: "Smart Igwe",
+    lastChat: "Hello sir/ma, my product was delivered just now.",
+  },
+  {
+    profileImage: "/assets/avatar.png",
+    name: "Smart Igwe",
+    lastChat: "Hello sir/ma, my product was delivered just now.",
+  },
+  {
+    profileImage: "/assets/avatar.png",
+    name: "Smart Igwe",
+    lastChat: "Hello sir/ma, my product was delivered just now.",
+  },
+];
